@@ -4,6 +4,6 @@ package org.example;
 public class App {
 
     public static void main(String[] args) {
-        org.example.widgetsManipulator.WidgetsManipulatorApp.main(args);
+        org.example.mainmenu.MainMenuApp.main(args);
     }   
 }

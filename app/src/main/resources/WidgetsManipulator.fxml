@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.widgetsManipulator.WidgetsManipulatorController">
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.widgetsmanipulator.WidgetsManipulatorController">
   <columnConstraints>
     <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="413.0" minWidth="10.0" prefWidth="358.0" />
     <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="292.0" />
@@ -20,9 +20,9 @@
     <RowConstraints maxHeight="258.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <CheckBox fx:id="centerCheckBox" alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" selected="true" text="Показать комбо-бокс" GridPane.rowIndex="1" />
-      <CheckBox fx:id="bottomCheckBox" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" selected="true" text="Показать метку" GridPane.rowIndex="2" />
-      <CheckBox fx:id="topCheckBox" alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" selected="true" text="Показать кнопку" />
+      <CheckBox fx:id="secondCheckBox" alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" selected="true" text="Показать комбо-бокс" GridPane.rowIndex="1" />
+      <CheckBox fx:id="thirdCheckBox" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" selected="true" text="Показать метку" GridPane.rowIndex="2" />
+      <CheckBox fx:id="firstCheckBox" alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" selected="true" text="Показать кнопку" />
       <Button fx:id="button" alignment="CENTER" mnemonicParsing="false" text="Кнопка" GridPane.columnIndex="1" />
       <ComboBox fx:id="comboBox" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" promptText="Комбо-бокс" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="86.0" style="-fx-background-color: lightgray;" text="Метка" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />

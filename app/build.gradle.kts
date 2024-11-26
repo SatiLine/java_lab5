@@ -7,6 +7,7 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
+    id("io.freefair.lombok") version "8.10.2"
     application
     id("org.openjfx.javafxplugin") version "0.1.0"
 }
@@ -35,12 +36,22 @@ java {
 
 javafx {
     version = "23.0.1"
-    modules("javafx.controls", "javafx.fxml")
+    modules("javafx.controls", "javafx.fxml", "javafx.base", "javafx.swing")
 }
 
 application {
     // Define the main class for the application.
     mainClass = "org.example.App"
+}
+
+tasks.named<Jar>("jar") {
+    manifest {
+        attributes["Main-Class"] = application.mainClass
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from(configurations.runtimeClasspath.get().map {
+        if(it.isDirectory) it else zipTree(it)
+    })
 }
 
 tasks.named<Test>("test") {
